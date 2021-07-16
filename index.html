@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sistem Informasi Pahlawan Indonesia</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['TAHUN', 'HIV', 'AIDS'],
+          ['s.d 2009', 34257, 26054],
+          ['2010', 21591, 7437],
+          ['2011', 21031, 8329],
+          ['2012', 21511, 11238],
+          ['2013', 29037, 12214],
+          ['2014', 32711, 8754],
+          ['2015', 30935, 9215],
+          ['2016', 41250, 10146],
+          ['2017', 48300, 10488],
+          ['2018', 46659, 10190],
+          ['2019', 22600, 2912],
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Jumlah HIV dan AIDS yang Dilaporkan per Tahun',
+            subtitle: '2009 - 2019',
+          },
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Umur', 'Jiwa'],
+          ['≤4',     7267],
+          ['5-10',   3375],
+          ['15-19',  9730],
+          ['20-24', 46626],
+          ['25-49',    223496],
+          ['≥50',    21131]
+        ]);
+
+        var options = {
+          title: 'Kasus HIV yang Dilaporkan Menurut Kelompok Umur tahun 2010-2019',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Jenis Kelamin', 'Jiwa'],
+          ['Laki-laki',     265761],
+          ['Perempuan',      130019]
+        ]);
+
+        var options = {
+          title: 'Persentase Kasus HIV yang Dilaporkan Menurut Jenis Kelamin  Tahun 2008–2019 '
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+  <link href="img/icon.png" rel="icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="css/model.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+  <div class="loader-bg">
+    <div class="loader"></div>
+  </div>
+  <header id="header">
+
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+
+      <div class="logo">
+        <a href="index.html">SIAIDS</a>
+      </div>
+
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="virus.html">Virus</a></li>
+          <li><a href="gejala.html">Gejala</a></li>
+          <li><a href="penyebaran.html">Penularan</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="content">
+    <div class="section-bg section-con">
+      <div class="container">
+<div class="wow fadeIn" data-wow-delay="2.1s">
+      <svg x="0px" y="0px" class="ribbon"
+      viewBox="0 0 54.224 54.224"  xml:space="preserve">
+   <g>
+     <path style="fill:rgb(252, 57, 57);" d="M20.412,13.926L20.412,13.926c4.263-1.909,9.137-1.909,13.4,0l0,0
+       c0.841-1.31,4.202-3.848,4.886-7.198l-1.586-4.802c-6.419-2.568-13.581-2.568-20,0l-1.414,4.802
+       C16.383,10.078,19.571,12.616,20.412,13.926z"/>
+     <path style="fill:rgb(244, 142, 142);" d="M21.112,14.926c0,0-4.313-5.313-4-13c0,0-8.125,13.563-5,19l24.575,31.857
+       c1.311,1.699,3.787,1.932,5.391,0.506l3.377-3.002c1.484-1.319,1.663-3.575,0.406-5.112L21.112,14.926z"/>
+     <g>
+       <path style="fill:#F76363;" d="M27.112,22.259l7.191,8.789l7.809-10.123c3.125-5.438-5-19-5-19c0.313,7.688-4,13-4,13
+         L27.112,22.259z"/>
+       <path style="fill:#F76363;" d="M19.921,31.048L8.363,45.175c-1.258,1.537-1.079,3.793,0.406,5.112l3.377,3.002
+         c1.604,1.426,4.081,1.194,5.391-0.506l9.575-12.413L19.921,31.048z"/>
+     </g>
+   </g>
+   </svg>
+  </div>
+   
+    
+  <div class="container">
+      <div class="section-header wow fadeIn" data-wow-delay="2.5s">
+        <h4>Sadarkan Bangsa Dari Bahaya<br><br>
+        <span>HIV/AIDS !</span> 
+      </h4>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+  <div class="wave wave3"></div>
+  <div class="wave wave4"></div>
+  </section>
+<br>
+  <div class="section-header">
+    <h3>Diagram Kasus HIV/AIDS Yang Tercatat</h3>
+  </div>
+
+  <section id="content">
+      
+            <div class="graph1 wow zoomIn" data-wow-delay="0.5s" id="columnchart_material" ></div>
+            <div class="graph2 wow zoomIn" data-wow-delay="0.7s" id="donutchart"></div>
+            <div class="graph3 wow zoomIn" data-wow-delay="1.1s" id="piechart"></div>
+  </section>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    setTimeout(function(){
+      $('.loader-bg').fadeToggle();
+    },1500);
+  </script>
+
+</body>
+</html>
